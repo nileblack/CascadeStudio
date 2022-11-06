@@ -11,7 +11,7 @@
 		"name": "Johnathon Selstad"
 	},
 	"scripts":{
-		"netlify": "rm -rf dist && mkdir dist && rsync -rv * dist --exclude ./dist"
+		"netlify": "rm -rf dist && mkdir dist && cat dir.txt |xargs -I{}  cp -Rv {} ./dist"
 	},
 	"license": "MIT",
 	"bundleDependencies": false,
