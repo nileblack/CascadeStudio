@@ -10,6 +10,9 @@
 	"author": {
 		"name": "Johnathon Selstad"
 	},
+	"scripts":{
+		"netlify": "rm -rf dist && mkdir dist && rsync -rv * dist --exclude ./dist"
+	},
 	"license": "MIT",
 	"bundleDependencies": false,
 	"dependencies": {
